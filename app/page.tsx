@@ -1,14 +1,12 @@
 import Image from "next/image";
 import title from "./img/img_2414.jpg";
-import { Card } from 'primereact/card';
 import BasicCard from "@/components/card";
 import GaCard from "@/components/card2";
-import TAb from "@/components/menubar";
 import "/node_modules/primeflex/primeflex.css"
-import Nextbar from "@/components/nxtnavbar";
-import {NextUIProvider} from "@nextui-org/react";
-import {ThemeProvider as NextThemesProvider} from "next-themes";
+
 import Link from "next/link";
+import GAsale from "@/components/card2";
+import Finalsale from "@/components/card3";
 
 export default function Home() {
   return (
@@ -31,8 +29,8 @@ export default function Home() {
 <div className="block  font-bold text-center p-4 border-round mb-3">
 <div className="flex justify-content-center flex-wrap">
     <div className="flex align-items-center justify-content-center w-14rem h-4rem bg-primary font-bold border-round m-2"><BasicCard/></div>
-    <div className="flex align-items-center justify-content-center w-14rem h-4rem bg-primary font-bold border-round m-2"> <GaCard/></div>
-    <div className="flex align-items-center justify-content-center w-14rem h-4rem bg-primary font-bold border-round m-2"><BasicCard/></div>
+    <div className="flex align-items-center justify-content-center w-14rem h-4rem bg-primary font-bold border-round m-2"> <GAsale/></div>
+    <div className="flex align-items-center justify-content-center w-14rem h-4rem bg-primary font-bold border-round m-2"><Finalsale/></div>
 </div></div>
 
 {/* SPACE */}
@@ -111,6 +109,10 @@ export default function Home() {
    </Link>
    </div>
 </div>
+</div>
+<div className="flex">
+    <div className="flex-1 h-4rem bg-primary font-bold text-center p-4 border-round">1</div>
+    <div className="flex-1 h-4rem bg-primary font-bold text-center p-4 border-round mx-4">2</div>
 </div>
 
 

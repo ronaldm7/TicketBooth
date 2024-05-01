@@ -1,19 +1,29 @@
 "use client";
-import React from 'react'; 
-import { Card } from 'primereact/card';
+import React from "react";
+import {Card, CardHeader, CardBody, } from "@nextui-org/react";
+import Image from "next/image";
+import title from "../img/img_2414.jpg";
 
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
-export default function GaCard() {
+export default function GAsale() {
     return (
 
-        <div className="card">
-            <Card title="GA Sale">
-                <p className="m-0">
-                   Order tickets for this cool event!
-                </p>
-            </Card>
-        </div>
+        <Card className="py-4">
+        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+          <p className="text-tiny uppercase font-bold">General Admisson</p>
+          <small className="text-default-500">$20.00 (3.18 Service Fee)</small>
+          <h4 className="font-bold text-large">General Sale</h4>
+        </CardHeader>
+        <CardBody className="overflow-visible py-2">
+          <Image
+            alt="Card background"
+            className="object-cover rounded-xl"
+            src={title}
+            width={270}
+          />
+        </CardBody>
+      </Card>
     )
 }
         
