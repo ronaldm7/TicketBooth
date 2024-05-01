@@ -4,7 +4,6 @@ import "./globals.css";
 import Nextbar from "@/components/nxtnavbar";
 import {Providers} from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
      
      
-      <body className={inter.className}><Providers><Nextbar/>{children}</Providers></body>
+      <body ><Providers><Nextbar/>{children}</Providers></body>
     </html>
 </>
   );

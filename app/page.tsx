@@ -1,5 +1,5 @@
 import Image from "next/image";
-import title from "./img/img_2414.jpg";
+import title from "../img/img_2414.jpg";
 import BasicCard from "@/components/card";
 import GaCard from "@/components/card2";
 import "/node_modules/primeflex/primeflex.css"
@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
 {/* controls dark mode */}
-    <main className="light text-foreground bg-background">
     
 {/* HEADER */}
 <div className="block  text-center p-4 border-round mb-3">
@@ -116,7 +115,6 @@ export default function Home() {
 </div>
 
 
-</main>
 
 
 
